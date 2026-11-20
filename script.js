@@ -86,69 +86,6 @@ const MACHINE_SPECS = {
       'Dry-run safe and stall-proof air valve design',
       'Easy-flush chambers for rapid color changeovers'
     ]
-  },
-  'LE-DT400': {
-    code: 'LE-DT400',
-    category: 'Spraying & Drying',
-    name: 'Multi-Zone Leather Drying Tunnel',
-    summary:
-      'Modular insulated drying tunnel engineered for even moisture and solvent evaporation without case-hardening or grain shrinkage.',
-    specs: [
-      ['Tunnel Length', '6,000 mm – 14,000 mm (modular 2m bays)'],
-      ['Operating Temperature', '45 °C – 110 °C'],
-      ['Heating Options', 'Steam, thermic oil, or electric IR'],
-      ['Temperature Control', 'PID digital zone controllers'],
-      ['Conveyor Options', 'Nylon cord or stainless wire mesh'],
-      ['Insulation', '75 mm high-density rockwool panels']
-    ],
-    features: [
-      'Balanced laminar hot-air recirculation per zone',
-      'Hinged top inspection doors with gas struts',
-      'Variable-frequency exhaust damper balancing',
-      'Cool-down exit section before stacking'
-    ]
-  },
-  'LE-SP800': {
-    code: 'LE-SP800',
-    category: 'Spraying & Drying',
-    name: 'Reciprocating Spray Booth & Water Scrubber',
-    summary:
-      'Compact linear reciprocating spray booth built for small-batch specialty leathers, paired with a stainless steel water-curtain overspray scrubber.',
-    specs: [
-      ['Working Width', '1,800 mm / 2,400 mm'],
-      ['Gun Carriage', '2 – 4 LE-SG100 HVLP guns'],
-      ['Reciprocation Speed', 'Up to 65 strokes/min (servo/VFD)'],
-      ['Exhaust Airflow', '8,500 m³/hr'],
-      ['Scrubber Tank', 'AISI 304 stainless steel'],
-      ['Total Power', '7.5 kW']
-    ],
-    features: [
-      'Adjustable stroke width for varying hide sizes',
-      'Integrated water-curtain pump & sludge tray',
-      'Explosion-proof lighting inside spray chamber',
-      'Small footprint for specialty finishing rooms'
-    ]
-  },
-  'LE-RC220': {
-    code: 'LE-RC220',
-    category: 'Measuring & QC',
-    name: 'Digital Area Readout & Stamp Unit',
-    summary:
-      'Microprocessor counter, high-brightness LED display, and thermal barcode/lot printer kit designed to modernize existing pinwheel area measuring machines.',
-    specs: [
-      ['Display Type', 'High-contrast 7-segment LED'],
-      ['Supported Units', 'sq.ft, sq.dm, sq.m'],
-      ['Connectivity', 'RS-232, USB, ERP CSV export'],
-      ['Printer Output', '58 mm thermal lot & bale tickets'],
-      ['Power Supply', '110–240V AC, 50/60Hz'],
-      ['Enclosure', 'Powder-coated steel swivel mount']
-    ],
-    features: [
-      'Drop-in retrofit for legacy optical/pinwheel bridges',
-      'Stores up to 500 batch summaries in memory',
-      'Automatic hide-count & average size calculation',
-      'Optional ink-stamp trigger output'
-    ]
   }
 };
 
