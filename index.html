@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leo Enterprises — Precision Leather Processing &amp; Tannery Machinery</title>
+  <meta
+    name="description"
+    content="Leo Enterprises manufactures heavy-duty leather processing machinery: hardwood tanning drums, band-knife splitting machines, hydraulic shaving units, and embossing presses for modern tanneries."
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ======================================================================
+       Header & Navigation
+       ====================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Leo Enterprises Home">
+        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="2" y="2" width="36" height="36" rx="4" fill="#1B1917" />
+          <circle cx="20" cy="15" r="5.5" stroke="#C87B4B" stroke-width="2" />
+          <circle cx="20" cy="26" r="5.5" stroke="#F3EFE8" stroke-width="2" />
+          <path d="M7 20.5H33" stroke="#9B4E26" stroke-width="2.2" stroke-linecap="round" />
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">Leo Enterprises</span>
+          <span class="brand-sub">Tannery &amp; Leather Machinery</span>
+        </span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <a href="#machinery" class="nav-link">Machinery</a>
+        <a href="#capabilities" class="nav-link">Capabilities</a>
+        <a href="#installations" class="nav-link">Installations</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="btn btn--primary btn--sm" id="header-quote-btn">Request Quote</a>
+      </nav>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-mobile"
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="nav-mobile" id="nav-mobile" aria-label="Mobile Navigation">
+      <a href="#machinery" class="nav-link">Machinery</a>
+      <a href="#capabilities" class="nav-link">Capabilities</a>
+      <a href="#installations" class="nav-link">Installations</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="btn btn--primary btn--sm">Request Quote</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ====================================================================
+         Hero Section
+         ==================================================================== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">EST. 1998 · INDUSTRIAL TANNERY SYSTEMS</span>
+          <h1>Heavy-Duty Machinery for Precision Leather Processing</h1>
+          <p class="hero-lead">
+            Leo Enterprises engineers and fabricates reliable wet-end and dry-end equipment for
+            small-to-mid-scale tanneries, saddleries, and leather finishing workshops—built from
+            seasoned cast iron and AISI 316 stainless steel.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#machinery" class="btn btn--primary" id="hero-explore-btn">Explore Equipment</a>
+            <a href="#contact" class="btn btn--secondary" id="hero-spec-btn">Request Technical Spec</a>
+          </div>
+
+          <div class="hero-metrics" aria-label="Engineering benchmarks">
+            <div>
+              <span class="metric-value">&plusmn;0.05 mm</span>
+              <span class="metric-label">Band-knife splitting tolerance</span>
+            </div>
+            <div>
+              <span class="metric-value">42+ Lines</span>
+              <span class="metric-label">Active tannery installations</span>
+            </div>
+            <div>
+              <span class="metric-value">SS316L</span>
+              <span class="metric-label">Corrosion-grade wet-end build</span>
+            </div>
+          </div>
+        </div>
+
+        <figure class="hero-media">
+          <img
+            src="assets/hero-splitting-machine.jpg"
+            alt="Leo Enterprises LE-S420 Precision Band-Knife Leather Splitting Machine processing vegetable-tanned hide"
+            width="1200"
+            height="675"
+          />
+          <figcaption class="hero-caption">
+            <span>LE-S420 Band-Knife Splitter</span>
+            <span class="hero-caption-tag">TOLERANCE &plusmn;0.05 MM</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Equipment Portfolio Section
+         ==================================================================== -->
+    <section id="machinery" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">EQUIPMENT CATALOG</span>
+            <h2>Core Tannery &amp; Finishing Machinery</h2>
+            <p class="section-intro">
+              Every machine is shop-assembled, dynamically balanced, and wet-tested with sample hides
+              prior to dispatch. Select a stage below to filter by process.
+            </p>
+          </div>
+
+          <div class="filter-bar" role="group" aria-label="Filter equipment by process">
+            <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true" id="filter-all">
+              All Equipment
+            </button>
+            <button type="button" class="filter-btn" data-filter="beamhouse" aria-pressed="false" id="filter-beamhouse">
+              Beamhouse &amp; Tanning
+            </button>
+            <button type="button" class="filter-btn" data-filter="splitting" aria-pressed="false" id="filter-splitting">
+              Splitting &amp; Shaving
+            </button>
+            <button type="button" class="filter-btn" data-filter="finishing" aria-pressed="false" id="filter-finishing">
+              Finishing &amp; Pressing
+            </button>
+          </div>
+        </div>
+
+        <div class="equipment-grid">
+          <!-- Card 1: Tanning Drum -->
+          <article class="machine-card" data-category="beamhouse">
+            <div class="machine-thumb">
+              <img
+                src="assets/tanning-drum.jpg"
+                alt="LE-D240 Hardwood and SS316 Leather Tanning Drum on heavy steel frame"
+                loading="lazy"
+              />
+              <span class="machine-code">LE-D240</span>
+            </div>
+            <div class="machine-body">
+              <span class="machine-cat">Beamhouse &amp; Tanning</span>
+              <h3 class="machine-title">Hardwood &amp; SS316 Tanning Drum</h3>
+              <p class="machine-desc">
+                Automated liming, chrome/vegetable tanning, and milling drum in seasoned Iroko timber
+                with programmable VFD reverse cycles.
+              </p>
+              <div class="machine-specs">
+                <div class="spec-row">
+                  <span class="spec-key">Drum Size</span>
+                  <span class="spec-val">2,400 &times; 2,000 mm</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Wet Load</span>
+                  <span class="spec-val">1,800 – 2,200 kg</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Drive Power</span>
+                  <span class="spec-val">18.5 kW VFD</span>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn btn--secondary btn--sm machine-action js-open-spec"
+                data-model="LE-D240"
+                id="spec-btn-LE-D240"
+              >
+                <span>View Technical Specs</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 2: Band-Knife Splitter -->
+          <article class="machine-card" data-category="splitting">
+            <div class="machine-thumb">
+              <img
+                src="assets/hero-splitting-machine.jpg"
+                alt="LE-S420 Precision Band-Knife Splitting Machine"
+                loading="lazy"
+              />
+              <span class="machine-code">LE-S420</span>
+            </div>
+            <div class="machine-body">
+              <span class="machine-cat">Splitting &amp; Shaving</span>
+              <h3 class="machine-title">Precision Band-Knife Splitter</h3>
+              <p class="machine-desc">
+                Cast-iron frame band-knife splitter with digital thickness gauge and dual CBN
+                automatic knife-sharpening heads.
+              </p>
+              <div class="machine-specs">
+                <div class="spec-row">
+                  <span class="spec-key">Working Width</span>
+                  <span class="spec-val">1,600 / 2,100 mm</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Tolerance</span>
+                  <span class="spec-val">&plusmn;0.05 mm</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Feed Speed</span>
+                  <span class="spec-val">8 – 26 m/min</span>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn btn--secondary btn--sm machine-action js-open-spec"
+                data-model="LE-S420"
+                id="spec-btn-LE-S420"
+              >
+                <span>View Technical Specs</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 3: Hydraulic Embossing Press -->
+          <article class="machine-card" data-category="finishing">
+            <div class="machine-thumb">
+              <img
+                src="assets/embossing-press.jpg"
+                alt="LE-P600 Hydraulic Embossing and Ironing Press"
+                loading="lazy"
+              />
+              <span class="machine-code">LE-P600</span>
+            </div>
+            <div class="machine-body">
+              <span class="machine-cat">Finishing &amp; Pressing</span>
+              <h3 class="machine-title">Hydraulic Embossing &amp; Ironing Press</h3>
+              <p class="machine-desc">
+                600-ton four-column hydraulic press with thermal-oil heated platen, PID temperature
+                control, and quick-lock engraving rails.
+              </p>
+              <div class="machine-specs">
+                <div class="spec-row">
+                  <span class="spec-key">Platen Area</span>
+                  <span class="spec-val">1,400 &times; 750 mm</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Max Force</span>
+                  <span class="spec-val">600 Tons</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Throughput</span>
+                  <span class="spec-val">140 – 180 hides/hr</span>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn btn--secondary btn--sm machine-action js-open-spec"
+                data-model="LE-P600"
+                id="spec-btn-LE-P600"
+              >
+                <span>View Technical Specs</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 4: Hydraulic Shaving Machine (Technical Schematic) -->
+          <article class="machine-card" data-category="splitting">
+            <div class="machine-thumb">
+              <div class="machine-schematic">
+                <svg viewBox="0 0 260 170" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Technical schematic of LE-SH300 Shaving Machine">
+                  <rect x="20" y="25" width="220" height="120" rx="4" stroke="#625C55" stroke-width="1.5" stroke-dasharray="4 4" />
+                  <circle cx="115" cy="72" r="28" stroke="#1B1917" stroke-width="2.5" />
+                  <circle cx="115" cy="72" r="10" stroke="#9B4E26" stroke-width="2" />
+                  <path d="M95 52L135 92M135 52L95 92" stroke="#9B4E26" stroke-width="1.5" />
+                  <circle cx="115" cy="116" r="16" stroke="#1B1917" stroke-width="2" />
+                  <path d="M36 98H224" stroke="#9B4E26" stroke-width="2.5" />
+                  <rect x="170" y="50" width="44" height="32" rx="2" stroke="#1B1917" stroke-width="1.8" />
+                  <path d="M180 66H204" stroke="#625C55" stroke-width="1.5" />
+                  <text x="30" y="160" fill="#625C55" font-family="JetBrains Mono, monospace" font-size="10">SPIRAL CYLINDER · 1,450 RPM</text>
+                </svg>
+              </div>
+              <span class="machine-code">LE-SH300</span>
+            </div>
+            <div class="machine-body">
+              <span class="machine-cat">Splitting &amp; Shaving</span>
+              <h3 class="machine-title">Hydraulic Leather Shaving Machine</h3>
+              <p class="machine-desc">
+                High-speed spiral blade cylinder shaving unit with automated traverse emery grinder
+                and cyclone dust-extraction hood.
+              </p>
+              <div class="machine-specs">
+                <div class="spec-row">
+                  <span class="spec-key">Working Width</span>
+                  <span class="spec-val">1,500 mm</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Cylinder Speed</span>
+                  <span class="spec-val">1,450 RPM</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Main Drive</span>
+                  <span class="spec-val">22 kW</span>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn btn--secondary btn--sm machine-action js-open-spec"
+                data-model="LE-SH300"
+                id="spec-btn-LE-SH300"
+              >
+                <span>View Technical Specs</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 5: Vacuum Dryer (Technical Schematic) -->
+          <article class="machine-card" data-category="finishing">
+            <div class="machine-thumb">
+              <div class="machine-schematic">
+                <svg viewBox="0 0 260 170" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Technical schematic of LE-V180 Twin-Table Vacuum Dryer">
+                  <rect x="22" y="30" width="216" height="110" rx="4" stroke="#625C55" stroke-width="1.5" stroke-dasharray="4 4" />
+                  <rect x="36" y="88" width="84" height="20" rx="2" stroke="#1B1917" stroke-width="2" />
+                  <rect x="140" y="88" width="84" height="20" rx="2" stroke="#1B1917" stroke-width="2" />
+                  <path d="M36 62L120 76" stroke="#9B4E26" stroke-width="2.5" stroke-linecap="round" />
+                  <rect x="140" y="68" width="84" height="12" rx="1.5" fill="#9B4E26" fill-opacity="0.2" stroke="#9B4E26" stroke-width="1.8" />
+                  <path d="M78 108V126M182 108V126M60 126H200" stroke="#1B1917" stroke-width="2" />
+                  <text x="30" y="160" fill="#625C55" font-family="JetBrains Mono, monospace" font-size="10">TWIN PLATEN · 160 M³/HR VACUUM</text>
+                </svg>
+              </div>
+              <span class="machine-code">LE-V180</span>
+            </div>
+            <div class="machine-body">
+              <span class="machine-cat">Finishing &amp; Pressing</span>
+              <h3 class="machine-title">Twin-Table Vacuum Leather Dryer</h3>
+              <p class="machine-desc">
+                Closed-loop heated stainless platens with liquid-ring vacuum pump for flat, supple
+                grain retention and condensate recovery.
+              </p>
+              <div class="machine-specs">
+                <div class="spec-row">
+                  <span class="spec-key">Table Area</span>
+                  <span class="spec-val">3,200 &times; 1,800 mm</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Vacuum Pump</span>
+                  <span class="spec-val">160 m&sup3;/hr</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Cycle Time</span>
+                  <span class="spec-val">90 – 180 sec</span>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn btn--secondary btn--sm machine-action js-open-spec"
+                data-model="LE-V180"
+                id="spec-btn-LE-V180"
+              >
+                <span>View Technical Specs</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 6: Hydraulic Fleshing Machine (Technical Schematic) -->
+          <article class="machine-card" data-category="beamhouse">
+            <div class="machine-thumb">
+              <div class="machine-schematic">
+                <svg viewBox="0 0 260 170" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Technical schematic of LE-F180 Hydraulic Fleshing Machine">
+                  <rect x="22" y="28" width="216" height="114" rx="4" stroke="#625C55" stroke-width="1.5" stroke-dasharray="4 4" />
+                  <path d="M55 125L75 50H185L205 125" stroke="#1B1917" stroke-width="2.2" />
+                  <circle cx="130" cy="82" r="22" stroke="#1B1917" stroke-width="2.2" />
+                  <circle cx="130" cy="82" r="8" fill="#9B4E26" />
+                  <path d="M88 106H172" stroke="#9B4E26" stroke-width="2.5" stroke-linecap="round" />
+                  <text x="30" y="160" fill="#625C55" font-family="JetBrains Mono, monospace" font-size="10">SS304 SHROUD · 130 HIDES/HR</text>
+                </svg>
+              </div>
+              <span class="machine-code">LE-F180</span>
+            </div>
+            <div class="machine-body">
+              <span class="machine-cat">Beamhouse &amp; Tanning</span>
+              <h3 class="machine-title">Hydraulic Fleshing &amp; Unhairing</h3>
+              <p class="machine-desc">
+                Heavy cast-iron wet-end fleshing machine with SS304 splash shrouds, hardened helical
+                blades, and high-pressure spray bar.
+              </p>
+              <div class="machine-specs">
+                <div class="spec-row">
+                  <span class="spec-key">Working Width</span>
+                  <span class="spec-val">1,800 / 2,400 mm</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Throughput</span>
+                  <span class="spec-val">90 – 130 hides/hr</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Drive Power</span>
+                  <span class="spec-val">18.5 kW</span>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn btn--secondary btn--sm machine-action js-open-spec"
+                data-model="LE-F180"
+                id="spec-btn-LE-F180"
+              >
+                <span>View Technical Specs</span>
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Engineering & Fabrication Capabilities (Dark Contrast Band)
+         ==================================================================== -->
+    <section id="capabilities" class="section--dark">
+      <div class="container capabilities-grid">
+        <div>
+          <span class="eyebrow eyebrow--light">FABRICATION &amp; ENGINEERING</span>
+          <h2>Built for Decades of Wet-End &amp; Dry-End Service</h2>
+          <p class="capabilities-lead">
+            Tannery floors are among the most corrosive industrial environments. We machine our own
+            rollers, balance cylinders in-house, and test every hydraulic manifold under sustained load.
+          </p>
+
+          <div class="capabilities-media">
+            <img
+              src="assets/workshop-craft.jpg"
+              alt="Leo Enterprises CNC-machined steel rollers, digital calipers, and leather hide samples on workshop bench"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div class="pillars-list">
+          <div class="pillar-item">
+            <span class="pillar-num">01 / METALLURGY</span>
+            <h3>Corrosion-Proof Wet-End Construction</h3>
+            <p>
+              All liquor-contacting components, dosing manifolds, and splash guards are fabricated in
+              AISI 316L stainless steel with sealed IP65 electrical enclosures.
+            </p>
+          </div>
+
+          <div class="pillar-item">
+            <span class="pillar-num">02 / PRECISION</span>
+            <h3>Micrometric Roller &amp; Blade Geometry</h3>
+            <p>
+              CNC-ground transport rollers and dynamically balanced shaving cylinders eliminate
+              chatter marks and preserve full-grain hide yield.
+            </p>
+          </div>
+
+          <div class="pillar-item">
+            <span class="pillar-num">03 / EFFICIENCY</span>
+            <h3>Low-Water &amp; VFD Energy Drives</h3>
+            <p>
+              Variable-frequency helical gearmotors and closed-loop vacuum condensers reduce power
+              draw by up to 24% compared to legacy fixed-speed drives.
+            </p>
+          </div>
+
+          <div class="pillar-item">
+            <span class="pillar-num">04 / SUPPORT</span>
+            <h3>Turnkey Commissioning &amp; Spares</h3>
+            <p>
+              On-site installation, operator training, and 48-hour dispatch on wear parts—including
+              band knives, spiral blades, felt sleeves, and hydraulic seals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Selected Tannery Installations
+         ==================================================================== -->
+    <section id="installations" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">FIELD DEPLOYMENTS</span>
+            <h2>Selected Tannery Installations</h2>
+            <p class="section-intro">
+              Representative turnkey lines and retrofits commissioned for independent tanneries and
+              leather goods manufacturers.
+            </p>
+          </div>
+        </div>
+
+        <div class="cases-grid">
+          <article class="case-card">
+            <span class="case-loc">Vellore, Tamil Nadu · Wet-End Line</span>
+            <h3>Vellore Heritage Tannery</h3>
+            <p>
+              Replaced four aging belt-driven drums with two LE-D240 VFD Hardwood Drums and an
+              LE-F180 Hydraulic Fleshing line with automated chemical dosing.
+            </p>
+            <div class="case-outcome">Result: 32% water reduction · 1,200 hides/day</div>
+          </article>
+
+          <article class="case-card">
+            <span class="case-loc">Kanpur, Uttar Pradesh · Saddlery</span>
+            <h3>Kanpur Saddlery Works</h3>
+            <p>
+              Commissioned an LE-S420 Band-Knife Splitter and LE-P600 Hydraulic Embossing Press for
+              heavy vegetable-tanned harness and bridle leather.
+            </p>
+            <div class="case-outcome">Result: &plusmn;0.05 mm thickness consistency</div>
+          </article>
+
+          <article class="case-card">
+            <span class="case-loc">Solapur, Maharashtra · Footwear</span>
+            <h3>Solapur Footwear Leather Co.</h3>
+            <p>
+              Installed an LE-SH300 Shaving Unit paired with an LE-V180 Twin-Table Vacuum Dryer to
+              eliminate drying bottlenecks in upper-leather finishing.
+            </p>
+            <div class="case-outcome">Result: 40% faster finishing cycle time</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         About Leo Enterprises
+         ==================================================================== -->
+    <section id="about" class="section section--alt">
+      <div class="container">
+        <div class="about-box">
+          <div class="about-copy">
+            <span class="eyebrow">ABOUT LEO ENTERPRISES</span>
+            <h2>Practical Engineering for Independent Tanneries</h2>
+            <p>
+              Founded in 1998, Leo Enterprises started as a precision roller and blade reconditioning
+              shop serving regional tanners. Today, we design and build complete leather processing
+              machinery tailored for small and mid-sized plants that demand industrial durability
+              without oversized factory footprints.
+            </p>
+            <p>
+              We work directly with tannery owners and plant engineers—customizing working widths,
+              voltage specs, and automation levels to match your hide mix and floor layout.
+            </p>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-stat">
+              <strong>28+ Yrs</strong>
+              <span>Machinery fabrication experience</span>
+            </div>
+            <div class="highlight-stat">
+              <strong>140+</strong>
+              <span>Machines operating in the field</span>
+            </div>
+            <div class="highlight-stat">
+              <strong>48 Hr</strong>
+              <span>Standard wear-part dispatch</span>
+            </div>
+            <div class="highlight-stat">
+              <strong>100%</strong>
+              <span>Load-tested before shipment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Contact & Quote Request
+         ==================================================================== -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow">ENGINEERING DESK</span>
+          <h2>Request a Technical Proposal or Plant Visit</h2>
+          <p class="section-intro">
+            Share your hide type, daily throughput, and target machine. Our engineers will prepare
+            floor-plan dimensions, power requirements, and lead times.
+          </p>
+
+          <div class="contact-details">
+            <div>
+              <span class="contact-item-label">Fabrication Works</span>
+              <span class="contact-item-val">Plot 14, Industrial Estate Phase II, Ranipet, India</span>
+            </div>
+            <div>
+              <span class="contact-item-label">Engineering &amp; Sales Desk</span>
+              <span class="contact-item-val">sales@leoenterprises.in &middot; +91 4172 248 910</span>
+            </div>
+            <div>
+              <span class="contact-item-label">Workshop Hours</span>
+              <span class="contact-item-val">Mon – Sat, 08:30 – 18:00 IST</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="quote-form" id="quote-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="quote-name">Full Name</label>
+              <input
+                type="text"
+                id="quote-name"
+                name="name"
+                class="form-control"
+                placeholder="Rajesh Kumar"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="quote-company">Tannery / Company</label>
+              <input
+                type="text"
+                id="quote-company"
+                name="company"
+                class="form-control"
+                placeholder="Deccan Leather Works"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="quote-email">Business Email</label>
+              <input
+                type="email"
+                id="quote-email"
+                name="email"
+                class="form-control"
+                placeholder="procurement@company.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="quote-equipment">Equipment Interest</label>
+              <select id="quote-equipment" name="equipment" class="form-control">
+                <option value="">Select a machine or line...</option>
+                <option value="LE-D240">LE-D240 — Hardwood &amp; SS316 Tanning Drum</option>
+                <option value="LE-S420">LE-S420 — Precision Band-Knife Splitter</option>
+                <option value="LE-SH300">LE-SH300 — Hydraulic Shaving Machine</option>
+                <option value="LE-P600">LE-P600 — Hydraulic Embossing Press</option>
+                <option value="LE-V180">LE-V180 — Twin-Table Vacuum Dryer</option>
+                <option value="LE-F180">LE-F180 — Hydraulic Fleshing Machine</option>
+                <option value="Custom Line">Custom Turnkey Line / Spare Parts</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="quote-notes">Hide Type, Daily Volume &amp; Specifications</label>
+            <textarea
+              id="quote-notes"
+              name="notes"
+              class="form-control"
+              placeholder="e.g., Bovine wet-blue hides, 800 hides/day, 415V 3-phase supply..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--cognac" id="quote-submit-btn">
+            Submit Technical Inquiry
+          </button>
+
+          <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       Technical Specification Modal
+       ====================================================================== -->
+  <div
+    class="modal-backdrop"
+    id="spec-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+  >
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="eyebrow" id="modal-code" style="margin-bottom: 0.3rem;">LE-S420</span>
+          <h3 id="modal-title">Machine Title</h3>
+        </div>
+        <button type="button" class="modal-close" id="modal-close" aria-label="Close specifications">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <p id="modal-summary" style="color: var(--text-secondary); font-size: 0.94rem;"></p>
+
+        <table class="modal-specs-table">
+          <tbody id="modal-specs-body"></tbody>
+        </table>
+
+        <div class="modal-features">
+          <h4>Standard Engineering Features</h4>
+          <ul id="modal-features-list"></ul>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn--secondary btn--sm" id="modal-close-footer">Close</button>
+        <button type="button" class="btn btn--primary btn--sm" id="modal-quote-btn">
+          Request Quote for This Model
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       Footer
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="brand-name" style="color: var(--text-on-dark);">Leo Enterprises</span>
+          <p class="footer-desc">
+            Precision leather processing machinery engineered for longevity, uniform hide yield, and
+            dependable regional service.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#machinery">Equipment Catalog</a></li>
+            <li><a href="#capabilities">Engineering &amp; Build</a></li>
+            <li><a href="#installations">Tannery Installations</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Machinery Lines</h4>
+          <ul>
+            <li><a href="#machinery">Tanning &amp; Milling Drums</a></li>
+            <li><a href="#machinery">Band-Knife Splitters</a></li>
+            <li><a href="#machinery">Hydraulic Shaving Units</a></li>
+            <li><a href="#machinery">Embossing &amp; Vacuum Dryers</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Leo Enterprises. All rights reserved.</span>
+        <span>Precision Tannery &amp; Leather Processing Equipment</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
