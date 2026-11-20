@@ -66,6 +66,27 @@ const MACHINE_SPECS = {
       'Compatible with rotary & reciprocating manifolds'
     ]
   },
+  'LE-DP200': {
+    code: 'LE-DP200',
+    category: 'Spray Guns & Modules',
+    name: 'Pneumatic Diaphragm Pump & Surge Arrestor',
+    summary:
+      'Air-operated double-diaphragm pigment and binder transfer pump fitted with a vertical mesh-guarded pulsation dampener, dual pressure gauges, air filter-regulator, and stainless ball valve.',
+    specs: [
+      ['Flow Capacity', 'Up to 18 L/min (stepless air control)'],
+      ['Air Supply Pressure', '1.5 – 6.0 bar'],
+      ['Pulsation Dampener', 'Vertical surge arrestor with safety mesh'],
+      ['Diaphragm & Seats', 'PTFE / Santoprene chemical-resistant'],
+      ['Pressure Monitoring', 'Dual analog gauges (air + fluid)'],
+      ['Fluid Connections', 'Stainless ball valve + barbed outlet']
+    ],
+    features: [
+      'Pulse-free pigment delivery to multi-gun rotary manifolds',
+      'Integrated air regulator & moisture trap assembly',
+      'Dry-run safe and stall-proof air valve design',
+      'Easy-flush chambers for rapid color changeovers'
+    ]
+  },
   'LE-DT400': {
     code: 'LE-DT400',
     category: 'Spraying & Drying',
