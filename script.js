@@ -3,130 +3,130 @@
  */
 
 const MACHINE_SPECS = {
-  'LE-D240': {
-    code: 'LE-D240',
-    category: 'Beamhouse & Tanning',
-    name: 'Hardwood & SS316 Tanning Drum',
+  'LE-RS3200': {
+    code: 'LE-RS3200',
+    category: 'Spraying & Drying',
+    name: 'Automatic Rotary Spray & Drying Line',
     summary:
-      'Heavy-duty automated tanning, liming, and milling drum constructed from seasoned African Iroko hardwood with AISI 316L stainless steel internal ribs and automated liquor dosing.',
+      'Glass-enclosed rotary carousel spray booth with PLC optical hide-sensing economizer, seamlessly integrated with a multi-zone heated drying tunnel for uniform pigment and top-coat application.',
     specs: [
-      ['Drum Diameter × Width', '2,400 mm × 2,000 mm'],
-      ['Batch Load Capacity', '1,800 – 2,200 kg wet weight'],
-      ['Drive Motor & VFD', '18.5 kW helical geared with inverter'],
-      ['Rotation Speed', '2.5 – 14 RPM (programmable reverse)'],
-      ['Control Interface', 'PLC touchscreen with temperature & pH probe'],
-      ['Frame Construction', 'Epoxy-coated IS2062 heavy structural steel']
+      ['Working Width', '2,800 mm / 3,200 mm'],
+      ['Rotary Arm Configuration', '8-gun or 12-gun high-speed carousel'],
+      ['Conveyor Speed', '6 – 22 m/min (VFD synchronized)'],
+      ['Control Interface', '10" Color HMI Touchscreen + PLC'],
+      ['Booth Enclosure', 'Powder-coated steel + tempered glass'],
+      ['Exhaust & Filtration', 'Dry-baffle or water-wash scrubber']
     ],
     features: [
-      'Automatic water & chemical dosing manifold',
-      'Pneumatic sliding loading door with safety interlock',
-      'Integrated heat-exchanger liquor circulation',
-      'Low-noise double-row spherical roller bearings'
+      'Optical hide-profile economizer cuts pigment waste up to 28%',
+      'Independent pressure & atomizing air manifolds',
+      'Synchronized nylon-cord conveyor with tensioner',
+      'Quick-latch side panels for rapid booth washdown'
     ]
   },
-  'LE-S420': {
-    code: 'LE-S420',
-    category: 'Splitting & Shaving',
-    name: 'Precision Band-Knife Splitting Machine',
+  'LE-AM1800': {
+    code: 'LE-AM1800',
+    category: 'Measuring & QC',
+    name: 'Electronic Pinwheel Area Measuring Machine',
     summary:
-      'High-rigidity cast-iron band-knife splitter engineered for uniform wet-blue, vegetable-tanned, and dry crust hides with micrometric thickness control.',
-    specs: [
-      ['Working Width', '1,600 mm / 2,100 mm options'],
-      ['Splitting Tolerance', '±0.05 mm across full width'],
-      ['Minimum Split Thickness', '0.35 mm (calf & sheep), 0.60 mm (bovine)'],
-      ['Feed Speed', '8 – 26 m/min stepless hydraulic'],
-      ['Total Installed Power', '14.5 kW (380–415V, 50/60Hz)'],
-      ['Knife Grinding Unit', 'Dual CBN / diamond-wheel automatic sharpener']
-    ],
-    features: [
-      'Digital thickness readout in 0.01 mm increments',
-      'Optical knife-edge alignment sensor',
-      'Sectional rubber & brass feed roller system',
-      'Centralized automatic grease lubrication'
-    ]
-  },
-  'LE-SH300': {
-    code: 'LE-SH300',
-    category: 'Splitting & Shaving',
-    name: 'Hydraulic Leather Shaving Machine',
-    summary:
-      'High-speed spiral cylinder shaving machine designed for clean, chatter-free thickness calibration of wet-blue and vegetable-tanned hides.',
-    specs: [
-      ['Working Width', '1,500 mm'],
-      ['Cylinder Speed', '1,450 RPM dynamically balanced'],
-      ['Shaving Thickness Range', '0.4 mm – 4.5 mm'],
-      ['Main Drive Power', '22 kW'],
-      ['Grinding Attachment', 'Automated traverse emery wheel'],
-      ['Dust Extraction Port', 'Ø 200 mm cyclone-ready flange']
-    ],
-    features: [
-      'Quick-change spiral blade cylinder assembly',
-      'Foot-pedal pneumatic bolster engagement',
-      'Hard-chrome plated transport roller',
-      'Emergency knee-bar & light-curtain safety'
-    ]
-  },
-  'LE-P600': {
-    code: 'LE-P600',
-    category: 'Finishing & Pressing',
-    name: 'Hydraulic Embossing & Ironing Press',
-    summary:
-      '600-ton four-column hydraulic press with thermal oil heated upper platen for grain embossing, smooth plating, and kiss-plating.',
-    specs: [
-      ['Platen Dimensions', '1,400 mm × 750 mm'],
-      ['Max Pressing Force', '600 Tons (adjustable 50–600T)'],
-      ['Platen Temperature', 'Up to 180 °C (±1.5 °C PID control)'],
-      ['Cycle Throughput', '140 – 180 hides / hour'],
-      ['Hydraulic Power Pack', '15 kW low-noise vane pump'],
-      ['Plate Changeover', 'Quick-lock hydraulic T-slot rails']
-    ],
-    features: [
-      'Dual-zone PID digital thermal regulation',
-      'Two-hand synchronized safety start & light barrier',
-      'Programmable dwell timer & pressure profile',
-      'Includes 1 standard mirror-chrome smooth plate'
-    ]
-  },
-  'LE-V180': {
-    code: 'LE-V180',
-    category: 'Finishing & Pressing',
-    name: 'Twin-Table Vacuum Leather Dryer',
-    summary:
-      'Energy-efficient double-table vacuum drying unit with mirror-polished stainless steel heating plates for flat, supple grain retention.',
-    specs: [
-      ['Table Working Area', '3,200 mm × 1,800 mm (×2 tables)'],
-      ['Heating Medium', 'Closed-loop hot water / thermal oil'],
-      ['Vacuum Pump Capacity', '160 m³/hr liquid-ring system'],
-      ['Operating Temperature', '45 °C – 90 °C'],
-      ['Cycle Time', '90 – 180 seconds per load'],
-      ['Total Power', '11 kW (excluding external boiler)']
-    ],
-    features: [
-      'Automatic lid lift & pneumatic clamping',
-      'Condensate recovery & water-saving condenser',
-      'Independent timer & vacuum gauge per table',
-      'Anti-crease Teflon mesh upper blanket'
-    ]
-  },
-  'LE-F180': {
-    code: 'LE-F180',
-    category: 'Beamhouse & Tanning',
-    name: 'Hydraulic Fleshing & Unhairing Machine',
-    summary:
-      'Robust wet-end fleshing machine engineered for green, limed, and pickled hides with corrosion-resistant SS304 shrouds.',
+      'High-accuracy electronic leather area measuring bridge with hardened metallic pinwheel sensors, polished hardwood feed and catch tables, and an overhead high-visibility LED counter.',
     specs: [
       ['Working Width', '1,800 mm / 2,400 mm'],
-      ['Cylinder Drive', '18.5 kW heavy-duty motor'],
-      ['Feed Roller', 'Pneumatic & hydraulic dual-pressure'],
-      ['Throughput', '90 – 130 full hides / hour'],
-      ['Water Spray Bar', 'High-pressure self-cleaning nozzles'],
-      ['Machine Weight', '4,200 kg cast-iron chassis']
+      ['Measurement Accuracy', '±0.2% certified repeatability'],
+      ['Display Units', 'sq.ft, sq.dm, sq.m (switchable)'],
+      ['Feed Speed', '18 m/min'],
+      ['Table Construction', 'Seasoned hardwood shelf & catch apron'],
+      ['Data Output', 'RS-232 / USB + thermal lot ticket printer']
     ],
     features: [
-      'Hardened helical fleshing blades',
-      'Splash-proof IP65 electrical control cabinet',
-      'Automatic blade sharpening attachment',
-      'Quick-release rubber bolster roller'
+      'Overhead dual-line LED display for operator & supervisor',
+      'Piece-by-piece accumulation and batch totalizer',
+      'Low-friction pinwheel bridge safe for delicate nappa',
+      'Includes certified calibration template'
+    ]
+  },
+  'LE-SG100': {
+    code: 'LE-SG100',
+    category: 'Spray Guns & Modules',
+    name: 'Automatic HVLP Leather Spray Gun',
+    summary:
+      'Precision CNC-machined automatic pneumatic spray gun featuring an emerald-anodized aluminum body, numbered micrometric fluid/fan regulator dials, and stainless steel fluid passages.',
+    specs: [
+      ['Nozzle Bore Options', '0.8 mm / 1.0 mm / 1.2 mm / 1.4 mm'],
+      ['Atomizing Air Pressure', '1.8 – 3.0 bar (HVLP)'],
+      ['Fluid Tip & Needle', 'Hardened AISI 316 stainless steel'],
+      ['Body Material', 'Anodized billet aluminum'],
+      ['Air & Fluid Ports', '1/4" BSP stainless fittings'],
+      ['Adjustments', 'Numbered 0–5 knurled micrometric dials']
+    ],
+    features: [
+      'Repeatable click-stop fan & fluid volume settings',
+      'Solvent-resistant PTFE needle packing seals',
+      'Quick-detach chrome air cap for fast cleaning',
+      'Compatible with rotary & reciprocating manifolds'
+    ]
+  },
+  'LE-DT400': {
+    code: 'LE-DT400',
+    category: 'Spraying & Drying',
+    name: 'Multi-Zone Leather Drying Tunnel',
+    summary:
+      'Modular insulated drying tunnel engineered for even moisture and solvent evaporation without case-hardening or grain shrinkage.',
+    specs: [
+      ['Tunnel Length', '6,000 mm – 14,000 mm (modular 2m bays)'],
+      ['Operating Temperature', '45 °C – 110 °C'],
+      ['Heating Options', 'Steam, thermic oil, or electric IR'],
+      ['Temperature Control', 'PID digital zone controllers'],
+      ['Conveyor Options', 'Nylon cord or stainless wire mesh'],
+      ['Insulation', '75 mm high-density rockwool panels']
+    ],
+    features: [
+      'Balanced laminar hot-air recirculation per zone',
+      'Hinged top inspection doors with gas struts',
+      'Variable-frequency exhaust damper balancing',
+      'Cool-down exit section before stacking'
+    ]
+  },
+  'LE-SP800': {
+    code: 'LE-SP800',
+    category: 'Spraying & Drying',
+    name: 'Reciprocating Spray Booth & Water Scrubber',
+    summary:
+      'Compact linear reciprocating spray booth built for small-batch specialty leathers, paired with a stainless steel water-curtain overspray scrubber.',
+    specs: [
+      ['Working Width', '1,800 mm / 2,400 mm'],
+      ['Gun Carriage', '2 – 4 LE-SG100 HVLP guns'],
+      ['Reciprocation Speed', 'Up to 65 strokes/min (servo/VFD)'],
+      ['Exhaust Airflow', '8,500 m³/hr'],
+      ['Scrubber Tank', 'AISI 304 stainless steel'],
+      ['Total Power', '7.5 kW']
+    ],
+    features: [
+      'Adjustable stroke width for varying hide sizes',
+      'Integrated water-curtain pump & sludge tray',
+      'Explosion-proof lighting inside spray chamber',
+      'Small footprint for specialty finishing rooms'
+    ]
+  },
+  'LE-RC220': {
+    code: 'LE-RC220',
+    category: 'Measuring & QC',
+    name: 'Digital Area Readout & Stamp Unit',
+    summary:
+      'Microprocessor counter, high-brightness LED display, and thermal barcode/lot printer kit designed to modernize existing pinwheel area measuring machines.',
+    specs: [
+      ['Display Type', 'High-contrast 7-segment LED'],
+      ['Supported Units', 'sq.ft, sq.dm, sq.m'],
+      ['Connectivity', 'RS-232, USB, ERP CSV export'],
+      ['Printer Output', '58 mm thermal lot & bale tickets'],
+      ['Power Supply', '110–240V AC, 50/60Hz'],
+      ['Enclosure', 'Powder-coated steel swivel mount']
+    ],
+    features: [
+      'Drop-in retrofit for legacy optical/pinwheel bridges',
+      'Stores up to 500 batch summaries in memory',
+      'Automatic hide-count & average size calculation',
+      'Optional ink-stamp trigger output'
     ]
   }
 };
@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const clientName = nameInput ? nameInput.value.trim() : 'Partner';
       const companyName = companyInput ? companyInput.value.trim() : '';
-      const selectedEquip = equipInput && equipInput.value ? equipInput.value : 'Custom Tannery Machinery';
+      const selectedEquip = equipInput && equipInput.value ? equipInput.value : 'Custom Finishing Equipment';
 
       formStatus.textContent = `Thank you, ${clientName}${companyName ? ` (${companyName})` : ''}. Your inquiry for ${selectedEquip} has been logged. Our engineering desk will respond with a formal technical proposal within 1 business day.`;
       formStatus.className = 'form-status is-success';
